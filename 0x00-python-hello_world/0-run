@@ -1,1 +1,2 @@
-export PYFILE=path/to/your/script.py
+#!/bin/bash
+python ./$PYFILE
