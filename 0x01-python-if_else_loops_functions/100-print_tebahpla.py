@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 for i in range(90, 64, -1):
     if i % 2 == 0:
