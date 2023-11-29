@@ -5,4 +5,3 @@ def add(a, b):
         a = a ^ b
         b = carry << 1
     return a
-

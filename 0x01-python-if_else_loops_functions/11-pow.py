@@ -6,4 +6,3 @@
         return a
     else:
         return a * pow(a, b - 1)
-

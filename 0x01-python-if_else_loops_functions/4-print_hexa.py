@@ -2,4 +2,3 @@
 
 for i in range(99):
     print("{:d} = {:02x}".format(i, i))
-
