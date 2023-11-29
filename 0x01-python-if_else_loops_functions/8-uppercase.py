@@ -10,7 +10,6 @@ def to_uper(character):
 
         return ord(character)
 
-::w
 
 def uppercase(string):
 
