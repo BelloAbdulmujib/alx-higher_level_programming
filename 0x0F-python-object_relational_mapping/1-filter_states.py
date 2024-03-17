@@ -5,8 +5,8 @@ if __name__ == "__main__":
     import sys
 
     db = MySQLdb.connect(host="localhost", user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3], port=3306)
-    cur = conn.cursor()
-    cur.execute("SELECT * FROM states strting with "N" ORDER BY id ASC")
+    cur = dbi.cursor()
+    cur.execute("SELECT * FROM states starting with "N" ORDER BY id ASC")
     query_rows = cur.fetchall()
     for row in query_rows:
     print(row)
