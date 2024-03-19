@@ -27,11 +27,9 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
 
-
     # Create a session object
 
     session = Session()
-
 
     # Retrieve all states from the database and print their IDs and names
 
