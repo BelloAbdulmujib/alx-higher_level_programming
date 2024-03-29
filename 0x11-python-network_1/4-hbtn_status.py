@@ -2,10 +2,10 @@
 """script that fetches the url of a website
 with the use of request function
 """
-import url.lequest
-url = 'https://alx-intranet.hbtn.io/status'
-response = request.get(url)
+import requests
+r = requests.get('https://alx-intranet.hbtn.io/status')
+r.status_code
 
-print("Body response:")
-print(f"\t- type: {type(response.content)}")
-print(f"\t- content: {response.content.decode('utf-8')}")
+print("Body r:")
+print(f"\t- type: {type(r.content)}")
+print(f"\t- content: {r.content.decode('utf-8')}")
