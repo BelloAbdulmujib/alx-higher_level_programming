@@ -3,9 +3,9 @@
 with the use of request function
 """
 import requests
-r = requests.get('https://alx-intranet.hbtn.io/status')
-r.status_code
+response = requests.get('https://alx-intranet.hbtn.io/status')
 
-print("Body r:")
-print(f"\t- type: {type(r.content)}")
-print(f"\t- content: {r.content.decode('utf-8')}")
+
+print("Body response:")
+print(f"\t- type: {type(response.text)}")
+print(f"\t- content: {response.text.encode('utf-8')}")
