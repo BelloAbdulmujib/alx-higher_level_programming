@@ -5,9 +5,10 @@ import sys
 import urllib.request
 import urllib.error
 
-def fetch_url_content(url):
-    try:
 
+def fetch_url_content(url):
+
+    try:
 
         with urllib.request.urlopen(url) as response:
 
@@ -16,10 +17,11 @@ def fetch_url_content(url):
     except urllib.error.HTTPError as e:
         print(f"Error code: {e.code}")
 
+
 if __name__ == "__main__":
 
-
     if len(sys.argv) != 2:
+
         print("Usage: python script.py <URL>")
         sys.exit(1)
 
